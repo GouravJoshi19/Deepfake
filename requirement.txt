@@ -1,6 +1,6 @@
 numpy
 scikit-learn
 PIL 
-Keras==3.0.5
+keras
 mtcnn
 os
