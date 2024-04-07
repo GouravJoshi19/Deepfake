@@ -1,7 +1,7 @@
 numpy
 scikit-learn
 PIL 
-keras==3.0.5
+keras
 keras.models
 mtcnn
 os
