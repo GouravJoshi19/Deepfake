@@ -4,7 +4,6 @@
 ![Deep Fake Image Classifier](https://your-image-url.com)
 
 ## Overview
-## Overview
 The Deep Fake Image Classifier is a web application built with Streamlit that harnesses the power of advanced machine learning techniques to distinguish between authentic and deep fake images. Leveraging state-of-the-art models such as MTCNN for face detection and ResNet50 for image classification, this application offers users a robust toolset to combat the proliferation of manipulated visual content.
 
 At its core, the application utilizes MTCNN, a deep learning-based face detection algorithm known for its accuracy and efficiency in detecting faces within images. Once faces are detected, the application employs ResNet50, a powerful convolutional neural network architecture, to analyze and classify the images based on learned features and patterns.
@@ -22,22 +21,16 @@ At its core, the application utilizes MTCNN, a deep learning-based face detectio
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/deep-fake-image-classifier.git
+   git clone https://github.com/GouravJoshi19/Deepfake.git
    
 2. Navigate to the project directory:
-
-```cd deep-fake-image-classifier```  
+   ```sh
+   cd deep-fake-image-classifier
 
 3. Install the required dependencies:
-```pip install -r requirements.txt```
-Usage
-Run the Streamlit app:
-sh
-Copy code
-streamlit run app.py
-Open the provided URL in your web browser to access the app.
-
-
+ ```sh
+pip install -r requirements.txt
+```
 
 
 ## Contributing
@@ -64,3 +57,5 @@ Run the Streamlit app:
 ```streamlit run app.py```  
 
 Open the provided URL in your web browser to access the app.
+```
+
