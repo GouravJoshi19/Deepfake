@@ -3,4 +3,3 @@ scikit-learn
 pillow 
 keras
 mtcnn
-os
