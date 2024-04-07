@@ -5,4 +5,4 @@ pillow
 keras
 mtcnn
 tensorflow
-opencv-python
+opencv-python==4.9.0
