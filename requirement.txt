@@ -1,0 +1,9 @@
+numpy
+scikit-learn
+PIL 
+pandas
+cv2
+tensorflow
+keras
+mtcnn
+os
