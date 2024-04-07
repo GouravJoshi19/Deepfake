@@ -4,6 +4,6 @@ PIL
 pandas
 cv2
 tensorflow
-keras
+keras.models
 mtcnn
 os
