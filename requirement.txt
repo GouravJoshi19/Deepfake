@@ -1,9 +1,6 @@
 numpy
 scikit-learn
 PIL 
-pandas
-cv2
-tensorflow
 Keras==3.0.5
 mtcnn
 os
