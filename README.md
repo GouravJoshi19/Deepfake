@@ -21,15 +21,16 @@ At its core, the application utilizes MTCNN, a deep learning-based face detectio
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/GouravJoshi19/Deepfake.git
+   git clone https://github.com/GouravJoshi19/Deepfake.git```
    
 2. Navigate to the project directory:
-   ```sh
-   cd deep-fake-image-classifier
+   ```sh 
+   cd deep-fake-image-classifier'''
 
 3. Install the required dependencies:
- ```sh
-pip install -r requirements.txt
+ ```sh 
+ pip install -r requirements.txt
+  
 ```
 
 
@@ -58,4 +59,5 @@ Run the Streamlit app:
 
 Open the provided URL in your web browser to access the app.
 ```
+Link will be uploaded soon
 
