@@ -1,7 +1,6 @@
 numpy
 scikit-learn
-PIL 
+pillow 
 keras
-keras.models
 mtcnn
 os
