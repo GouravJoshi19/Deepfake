@@ -1,8 +1,10 @@
+numpy==1.19.2
 streamlit
+opencv-python==4.5.1.48
+Tensorflow 2.9
 numpy
-scikit-learn
-pillow 
-keras
+opencv-python
 mtcnn
-tensorflow
-opencv-python==4.9.0.80
+scikit-learn
+keras
+pillow
