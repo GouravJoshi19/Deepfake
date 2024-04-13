@@ -1,7 +1,7 @@
 
 ## Deep Fake Image Classifier
 
-![Deep Fake Image Classifier][Screenshot 2024-04-08 180539](https://github.com/GouravJoshi19/Deepfake/assets/131295744/667afd56-6b85-43b3-be08-fab5e7a47fe1)
+![Deep Fake Image Classifier](https://github.com/GouravJoshi19/Deepfake/assets/131295744/667afd56-6b85-43b3-be08-fab5e7a47fe1)
 ![Screenshot 2024-04-08 180551](https://github.com/GouravJoshi19/Deepfake/assets/131295744/7a97eb97-dfe6-4449-b6a3-829ca62440b3)  
 ![Screenshot 2024-04-08 180607](https://github.com/GouravJoshi19/Deepfake/assets/131295744/89322f99-8e29-48cc-86cf-aba215d9c623)
 ![Screenshot 2024-04-08 180649](https://github.com/GouravJoshi19/Deepfake/assets/131295744/2aa87af5-be19-4677-81bc-1ebc4cf0524c)
