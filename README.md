@@ -1,7 +1,14 @@
 
 ## Deep Fake Image Classifier
 
-![Deep Fake Image Classifier](https://your-image-url.com)
+![Deep Fake Image Classifier](https://github.com/GouravJoshi19/Deepfake/assets/131295744/667afd56-6b85-43b3-be08-fab5e7a47fe1)
+![Screenshot 2024-04-08 180551](https://github.com/GouravJoshi19/Deepfake/assets/131295744/7a97eb97-dfe6-4449-b6a3-829ca62440b3)  
+![Screenshot 2024-04-08 180607](https://github.com/GouravJoshi19/Deepfake/assets/131295744/89322f99-8e29-48cc-86cf-aba215d9c623)
+![Screenshot 2024-04-08 180649](https://github.com/GouravJoshi19/Deepfake/assets/131295744/2aa87af5-be19-4677-81bc-1ebc4cf0524c)
+![Screenshot 2024-04-13 200346](https://github.com/GouravJoshi19/Deepfake/assets/131295744/e1419640-f384-43fc-879e-b4aa48bd5d0a)
+![Screenshot 2024-04-13 200506](https://github.com/GouravJoshi19/Deepfake/assets/131295744/e4d5f805-bd55-49f8-9e03-31679f8f4876)
+![Screenshot 2024-04-13 200450](https://github.com/GouravJoshi19/Deepfake/assets/131295744/87cd4638-f98e-422b-bd82-aa2313385eae)
+
 
 ## Overview
 The Deep Fake Image Classifier is a web application built with Streamlit that harnesses the power of advanced machine learning techniques to distinguish between authentic and deep fake images. Leveraging state-of-the-art models such as MTCNN for face detection and ResNet50 for image classification, this application offers users a robust toolset to combat the proliferation of manipulated visual content.
