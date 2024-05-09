@@ -145,6 +145,7 @@ def main():
                     if ((output[0]['confidence'])*100)<90:
                         st.write("confidence level:",output[0]['confidence'])
                         raise Exception
+                        
             
                     else:
                         
