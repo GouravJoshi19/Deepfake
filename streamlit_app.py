@@ -23,8 +23,8 @@ intro_text = """
     <p>Powered by state-of-the-art machine learning models, our Deep Fake Image Classifier analyzes image data to identify subtle discrepancies and anomalies indicative of manipulation. Whether you're verifying the authenticity of an image, a social media user concerned about fake content. our application offers a user-friendly interface and best possible results.</p>
 </div>
 """
-# Apply CSS styling for background, font, and font color
-# Render the intro paragraph with custom font styles using Streamlit markdown component and HTML/CSS
+
+
 st.markdown(intro_text, unsafe_allow_html=True)
 # Define the main function to create the web app
 def main():
@@ -40,8 +40,8 @@ def main():
     def classify_image(image_par):
     
         image_newly = preprocess_image(image_par)
-        image_newly = np.expand_dims(image_newly, axis=0)  # Add batch dimension
-        predictions = model.predict(image_newly)
+        image_newly_1 = np.expand_dims(image_newly, axis=0)  # Add batch dimension
+        predictions = model.predict(image_newly_1)
         return predictions
 
 
@@ -60,7 +60,7 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-    # Hero Section
+    
      # Show some description about deep fake images
     st.write("---")
     writes= """
@@ -148,27 +148,27 @@ def main():
                         
             
                     else:
-                        
-                            x,y,width,hieght=output[0]['box']
+                        for i in output:
+                            x,y,width,hieght=i['box']
                             img1 = ImageDraw.Draw(picture)   
                             x1, y1 = x,y # Top-left corner
                             x2, y2 = x+width,y+hieght  # Bottom-right corner
 
 
-                            img1.rectangle([(x1, y1), (x2, y2)], outline="white")     
+                                
                             crop_pic = picture.crop( (x1, y1 ,x2, y2) )  
                             st.image(crop_pic,caption="face_detected",width=300)      
-                        # st.write("confidence level:",output[0]['confidence'])
+                       
                 
                 
-                    with st.spinner('Classifying...'): 
-                            prediction = classify_image(crop_pic)
-                            if prediction > 0.5:
-                                st.error(f"{(prediction[0][0])*100:.2f} % Fake")
-                                
-                            elif prediction <=0.5:
-                                st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
-            
+                            with st.spinner('Classifying...'): 
+                                    prediction = classify_image(crop_pic)
+                                    if prediction >= 0.55:
+                                        st.error(f"{(prediction[0][0])*100:.2f} % Fake")
+                                        
+                                    elif prediction <0.55:
+                                        st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
+                    
             except Exception as e:
                 st.error(e)
 
@@ -197,27 +197,28 @@ def main():
                             raise Exception
                 
                         else:
-                            with col2:
-                                x,y,width,hieght=output[0]['box']
-                                img1 = ImageDraw.Draw(picture)   
-                                x1, y1 = x,y # Top-left corner
-                                x2, y2 = x+width,y+hieght  # Bottom-right corner
+                            for i in output:
+                               
+                                    x,y,width,hieght=i['box']
+                                    img1 = ImageDraw.Draw(picture)   
+                                    x1, y1 = x,y # Top-left corner
+                                    x2, y2 = x+width,y+hieght  # Bottom-right corner
 
 
-                                img1.rectangle([(x1, y1), (x2, y2)], outline="white")     
-                                crop_pic = picture.crop( (x1, y1 ,x2, y2) )  
-                                st.image(crop_pic,caption="face_detected",width=300)      
-                               # st.write("confidence level:",output[0]['confidence'])
-                    
-                    
-                        with st.spinner('Classifying...'): 
-                            prediction = classify_image(crop_pic)
-                            if prediction > 0.5:
-                                st.error(f"{(prediction[0][0])*100:.2f} % Fake")
-                                
-                            elif prediction <=0.5:
-                                st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
-                
+                                    img1.rectangle([(x1, y1), (x2, y2)], outline="white")     
+                                    crop_pic = picture.crop( (x1, y1 ,x2, y2) )  
+                                    st.image(crop_pic,caption="face_detected",width=300)      
+                                # st.write("confidence level:",output[0]['confidence'])
+                        
+                        
+                                    with st.spinner('Classifying...'): 
+                                        prediction = classify_image(crop_pic)
+                                        if prediction > 0.55:
+                                            st.error(f"{(prediction[0][0])*100:.2f} % Fake")
+                                            
+                                        elif prediction <=0.55:
+                                            st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
+                        
                 except:
                     st.error("Failed to Detect Face")
         
