@@ -1,7 +1,7 @@
+[server]
+headless=true
 [theme]
 primaryColor="#D6A1FF"
 backgroundColor="#DCECEC"
 secondaryBackgroundColor="#D0CEC5"
 textColor="#272424"
-[server]
-headless=True
