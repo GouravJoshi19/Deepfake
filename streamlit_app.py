@@ -163,10 +163,10 @@ def main():
                 
                             with st.spinner('Classifying...'): 
                                     prediction = classify_image(crop_pic)
-                                    if prediction >= 0.55:
+                                    if prediction >= 0.5:
                                         st.error(f"{(prediction[0][0])*100:.2f} % Fake")
                                         
-                                    elif prediction <0.55:
+                                    elif prediction <0.5:
                                         st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
                     
             except Exception as e:
@@ -213,10 +213,10 @@ def main():
                         
                                     with st.spinner('Classifying...'): 
                                         prediction = classify_image(crop_pic)
-                                        if prediction > 0.55:
+                                        if prediction > 0.5:
                                             st.error(f"{(prediction[0][0])*100:.2f} % Fake")
                                             
-                                        elif prediction <=0.55:
+                                        elif prediction <=0.5:
                                             st.success(f"{100.0-(prediction[0][0])*100:.2f} % Real")
                         
                 except:
