@@ -2,6 +2,7 @@
 ## Deep Fake Image Classifier
 
 ![Deep Fake Image Classifier](https://your-image-url.com)
+[Watch the demo video]("C:/Users/ASUS/Videos/Screen Recordings/Screen Recording 2024-09-17 224409.mp4")
 
 ## Overview
 The Deep Fake Image Classifier is a web application built with Streamlit that harnesses the power of advanced machine learning techniques to distinguish between authentic and deep fake images. Leveraging state-of-the-art models such as MTCNN for face detection and ResNet50 for image classification, this application offers users a robust toolset to combat the proliferation of manipulated visual content.
