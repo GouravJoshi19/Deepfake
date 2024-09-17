@@ -1,6 +1,6 @@
 
 ## Deep Fake Image Classifier
-#check out the demo video  
+ 
 https://github.com/user-attachments/assets/ee0959d1-e5e0-46e8-8da5-d27f84b79742
 
 
