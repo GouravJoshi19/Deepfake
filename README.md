@@ -1,8 +1,8 @@
 
 ## Deep Fake Image Classifier
 
-![Deep Fake Image Classifier](https://your-image-url.com)
-[Watch the demo video](""
+![Deep Fake Image Classifier]
+(
 
 https://github.com/user-attachments/assets/ee0959d1-e5e0-46e8-8da5-d27f84b79742
 
